@@ -4,68 +4,50 @@
   <head>
     <meta charset="UTF-8">
     <title>Sarah Giles Collection Care</title>
-    <link href="https://fonts.cdnfonts.com/css/gotham-book" rel="stylesheet">
+    <link rel="stylesheet" href="sgcc.css">
     <style>
 
-      body
+      #content
       {
-        background-color: rgb(63,66,64);
-      }
-
-      .email, .tel
-      {
-        color: white;
-        font-family: "Gotham Book", sans-serif;
-        font-size: 14pt;
-        text-decoration: none;
-      }
-
-      .email:hover, .tel:hover
-      {
-        text-decoration: underline;
-      }
-
-      #contact
-      {
-        margin: 10px;
-      }
-
-      #contact .tel
-      {
-        border-right: 2px white solid;
-        padding-right: 5px;
-      }
-
-      #logo img
-      {
-        display: block;
-        height: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
-        width: 70%;
-      }
-
-      #logo:after
-      {
-        color: white;
-        content: "Coming soon...";
-        display: block;
-        font-family: "Gotham Book", sans-serif;
-        font-size: 20pt;
-        margin-top: 100px;
+        align-items: center;
+        bottom: 80px;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        position: fixed;
+        right: 0;
         text-align: center;
+        top: 120px;
+        white-space: nowrap;
+      }
+
+      #home
+      {
+        border: 1px darkgrey solid;
+        object-fit: cover;
+        height: 90%;
       }
 
     </style>
   </head>
   <body>
-    <div id="contact">
-      <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">+44 7876 147 230</a>
-      <a class="email" tabindex="-1" href="mailto:info@sarahgilescc.com">info@sarahgilescc.com</a>
+    <div id="header">
+      <div id="header-image">
+        <img alt="logo" src="img/SGCC_logo_white_1920.png"/>
+      </div>
+      <div id="navigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
     </div>
-    <div id="logo">
-      <img alt="logo" src="img/SGCC_logo_white_1920.png"/>
+    <div id="content">
+      <img id="home" alt="home" src="img/home.jpg"/>
+    </div>
+    <div id="footer">
+      <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">t: +44 7876 147 230</a>
+      <a class="email" tabindex="-1" href="mailto:info@sarahgilescc.com">e: info@sarahgilescc.com</a>
+      <div id="copyright">© 2022 Sarah Giles Collection Care</div>
     </div>
   </body>
 </html>
