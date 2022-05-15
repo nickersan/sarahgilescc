@@ -18,22 +18,14 @@
     <meta property="og:image:height" content="118">
     <meta property="og:image:type" content="image/jpeg">
     <meta name="msapplication-TileImage" content="/img/SGCC_logo_grey_480px.png">
+    <script type="text/javascript" src="js/sgcc.js"></script>
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gotham-book" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="sgcc.css">
     <link rel="icon" href="img/SGCC_icon_grey_200px.png">
     <style>
 
-      body
-      {
-        margin: 200px 0 0 0;
-      }
-
-      h2
-      {
-        font-size: 12pt;
-      }
-
-      #content
+      #section
       {
         bottom: 80px;
         left: 0;
@@ -46,28 +38,16 @@
         overflow: scroll;
       }
 
-      #content a
-      {
-        display: block;
-        margin-bottom: 20px;
-      }
-
-      #content span
-      {
-        color: rgb(63,66,64);
-        display: block;
-        font-weight: bold;
-        margin-bottom: 20px;
-        padding-left: 20px;
-      }
-
     </style>
   </head>
-  <body>
+  <body onload="initializeHeader()">
     <div id="header">
-      <div id="header-image">
-        <img alt="logo" src="img/SGCC_logo_white_1920.png"/>
-      </div>
+      <a id="header-anchor" href="index.html">
+        <img id="header-image" alt="logo" src="img/SGCC_logo_white_1920.png"/>
+      </a>
+      <a id="menu" href="javascript:void(0);" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
       <div id="navigation">
         <a href="index.html">HOME</a>
         <a href="contact.html">CONTACT</a>
@@ -76,34 +56,36 @@
       </div>
     </div>
     <div id="content">
-      <h1>Services</h1>
-      <h2>Condition Reports</h2>
-      <ul>
-        <li>Provide an in-depth assessment of the condition of an artwork or object from which care and conservation advice can be provided.</li>
-        <li>Establish the true nature of the condition of a piece prior to insuring an item or before a piece is loaned or shipped.</li>
-        <li>Assist with potential sale of an item – adding to provenance and giving buyer peace of mind when making a transaction.</li>
-        <li>Help to prevent long-term damage.</li>
-      </ul>
-      <h2>Conservation & Restoration</h2>
-      <ul>
-        <li>Assessment of an object or artwork for treatment including paintings, works on paper (watercolours, prints etc), sculpture, ceramics and glass, gilded frames, metal, furniture and modern and contemporary art.</li>
-        <li>Preventive measures – such as conservation cleaning or stabilisation and recommendations for storage or display, including display cases and bespoke mounts.</li>
-        <li>Free estimates and treatment reports.</li>
-      </ul>
-      <h2>Project Management</h2>
-      <ul>
-        <li>Condition reporting and assessment of collections.</li>
-        <li>Specialist on site cleaning.</li>
-        <li>Preventive treatments including environmental control and monitoring of pest and insect infestation to ensure stability of the collection.</li>
-        <li>Advising following insurance claims – treatment for fine art and objects suffering from fire, water and transit/handling issues.</li>
-        <li>Storage solutions.</li>
-      </ul>
-      <h2>Training</h2>
-      <ul>
-        <li>Advising household staff on maintenance and care of collection.</li>
-        <li>Presentation to the insurance sector on what can be achieved post disaster.</li>
-        <li>Bespoke packages tailored to client’s requirements.</li>
-      </ul>
+      <div id="section">
+        <h1>Services</h1>
+        <h2>Condition Reports</h2>
+        <ul>
+          <li>Provide an in-depth assessment of the condition of an artwork or object from which care and conservation advice can be provided.</li>
+          <li>Establish the true nature of the condition of a piece prior to insuring an item or before a piece is loaned or shipped.</li>
+          <li>Assist with potential sale of an item – adding to provenance and giving buyer peace of mind when making a transaction.</li>
+          <li>Help to prevent long-term damage.</li>
+        </ul>
+        <h2>Conservation & Restoration</h2>
+        <ul>
+          <li>Assessment of an object or artwork for treatment including paintings, works on paper (watercolours, prints etc), sculpture, ceramics and glass, gilded frames, metal, furniture and modern and contemporary art.</li>
+          <li>Preventive measures – such as conservation cleaning or stabilisation and recommendations for storage or display, including display cases and bespoke mounts.</li>
+          <li>Free estimates and treatment reports.</li>
+        </ul>
+        <h2>Project Management</h2>
+        <ul>
+          <li>Condition reporting and assessment of collections.</li>
+          <li>Specialist on site cleaning.</li>
+          <li>Preventive treatments including environmental control and monitoring of pest and insect infestation to ensure stability of the collection.</li>
+          <li>Advising following insurance claims – treatment for fine art and objects suffering from fire, water and transit/handling issues.</li>
+          <li>Storage solutions.</li>
+        </ul>
+        <h2>Training</h2>
+        <ul>
+          <li>Advising household staff on maintenance and care of collection.</li>
+          <li>Presentation to the insurance sector on what can be achieved post disaster.</li>
+          <li>Bespoke packages tailored to client’s requirements.</li>
+        </ul>
+      </div>
     </div>
     <div id="footer">
       <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">+44 7876 147 230</a>

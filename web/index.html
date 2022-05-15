@@ -18,11 +18,14 @@
     <meta property="og:image:height" content="118">
     <meta property="og:image:type" content="image/jpeg">
     <meta name="msapplication-TileImage" content="/img/SGCC_logo_grey_480px.png">
+    <script type="text/javascript" src="js/sgcc.js"></script>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gotham-book" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="sgcc.css">
     <link rel="icon" href="img/SGCC_icon_grey_200px.png">
     <style>
 
-      #content
+      #section
       {
         align-items: center;
         bottom: 80px;
@@ -32,11 +35,10 @@
         position: fixed;
         right: 0;
         text-align: center;
-        top: 120px;
         white-space: nowrap;
       }
 
-      #home
+      #section img
       {
         border: 1px darkgrey solid;
         object-fit: cover;
@@ -45,11 +47,14 @@
 
     </style>
   </head>
-  <body>
+  <body onload="initializeHeader()">
     <div id="header">
-      <div id="header-image">
-        <img alt="logo" src="img/SGCC_logo_white_1920.png"/>
-      </div>
+      <a id="header-anchor" href="index.html">
+        <img id="header-image" alt="logo" src="img/SGCC_logo_white_1920.png"/>
+      </a>
+      <a id="menu" href="javascript:void(0);" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
       <div id="navigation">
         <a href="index.html">HOME</a>
         <a href="contact.html">CONTACT</a>
@@ -58,7 +63,9 @@
       </div>
     </div>
     <div id="content">
-      <img id="home" alt="home" src="img/home.jpg"/>
+      <div id="section">
+        <img alt="home" src="img/home.jpg"/>
+      </div>
     </div>
     <div id="footer">
       <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">+44 7876 147 230</a>

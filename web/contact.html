@@ -18,17 +18,14 @@
     <meta property="og:image:height" content="118">
     <meta property="og:image:type" content="image/jpeg">
     <meta name="msapplication-TileImage" content="/img/SGCC_logo_grey_480px.png">
+    <script type="text/javascript" src="js/sgcc.js"></script>
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gotham-book" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="sgcc.css">
     <link rel="icon" href="img/SGCC_icon_grey_200px.png">
     <style>
 
-      body
-      {
-        margin: 200px 0 0 0;
-      }
-
-      #content
+      #section
       {
         bottom: 80px;
         left: 0;
@@ -41,13 +38,13 @@
         overflow: scroll;
       }
 
-      #content a
+      #section a
       {
         display: block;
         margin-bottom: 20px;
       }
 
-      #content span
+      #section span
       {
         color: rgb(63,66,64);
         display: block;
@@ -58,11 +55,14 @@
 
     </style>
   </head>
-  <body>
+  <body onload="initializeHeader()">
     <div id="header">
-      <div id="header-image">
-        <img alt="logo" src="img/SGCC_logo_white_1920.png"/>
-      </div>
+      <a id="header-anchor" href="index.html">
+        <img id="header-image" alt="logo" src="img/SGCC_logo_white_1920.png"/>
+      </a>
+      <a id="menu" href="javascript:void(0);" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
       <div id="navigation">
         <a href="index.html">HOME</a>
         <a href="contact.html">CONTACT</a>
@@ -71,12 +71,14 @@
       </div>
     </div>
     <div id="content">
-      <h1>Contact</h1>
-      <p>
-        <span>85 Great Portland Street, London W1W 7LT</span>
-        <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">+44 7876 147 230</a>
-        <a class="email" tabindex="-1" href="mailto:info@sarahgilescc.com">info@sarahgilescc.com</a>
-      </p>
+      <div id="section">
+        <h1>Contact</h1>
+        <p>
+          <span>85 Great Portland Street, London W1W 7LT</span>
+          <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">+44 7876 147 230</a>
+          <a class="email" tabindex="-1" href="mailto:info@sarahgilescc.com">info@sarahgilescc.com</a>
+        </p>
+      </div>
     </div>
     <div id="footer">
       <a class="tel" tabindex="-1" href="tel:+44 7876 147 230">+44 7876 147 230</a>
