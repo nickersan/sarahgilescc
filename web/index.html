@@ -25,29 +25,42 @@
     <link rel="icon" href="img/SGCC_icon_grey_200px.png">
     <style>
 
+      #content
+      {
+        overflow: hidden;
+        padding: 20px;
+      }
+
       #section
       {
         align-items: center;
-        bottom: 80px;
         display: flex;
+        height: 100%;
         justify-content: center;
-        left: 0;
-        position: fixed;
-        right: 0;
-        text-align: center;
-        white-space: nowrap;
       }
 
       #section img
       {
         border: 1px darkgrey solid;
-        object-fit: cover;
-        height: 90%;
+        display: block;
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        width: auto;
+      }
+
+      @media (max-width: 768px)
+      {
+        #content
+        {
+          padding: 10px;
+        }
       }
 
     </style>
   </head>
-  <body onload="initializeHeader()">
+  <body>
     <div id="header">
       <a id="header-anchor" href="index.html">
         <img id="header-image" alt="logo" src="img/SGCC_logo_white_1920.png"/>
