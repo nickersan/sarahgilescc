@@ -95,8 +95,13 @@ h2
 
 #menu
 {
+  background: none;
+  border: 0;
   color: white;
+  cursor: pointer;
   display: none;
+  font-size: 16px;
+  padding: 0 0 0 20px;
 }
 
 #navigation a
