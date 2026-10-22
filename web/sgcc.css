@@ -135,6 +135,26 @@ h2
   text-decoration: underline;
 }
 
+.scroll
+{
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.scroll #content
+{
+  flex: 1 0 auto;
+  overflow-y: visible;
+}
+
+.scroll #header
+{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 @media (max-width: 768px)
 {
   #header
@@ -186,5 +206,10 @@ h2
   #content
   {
     overflow: visible;
+  }
+
+  .scroll #header
+  {
+    position: static;
   }
 }
