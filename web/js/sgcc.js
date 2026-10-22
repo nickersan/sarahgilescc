@@ -27,5 +27,6 @@ document.addEventListener("click", function (event)
 
 document.addEventListener("DOMContentLoaded", function ()
 {
+  document.getElementById("menu").addEventListener("click", toggleMenu);
   document.getElementById("year").textContent = new Date().getFullYear();
 });
