@@ -24,3 +24,8 @@ document.addEventListener("click", function (event)
     setMenu(false);
   }
 });
+
+document.addEventListener("DOMContentLoaded", function ()
+{
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
