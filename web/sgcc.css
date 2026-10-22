@@ -8,6 +8,7 @@ body
   height: 100dvh;
   color: rgb(63,66,64);
   font-family: "Gotham Book", sans-serif;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -25,9 +26,16 @@ a:hover
   text-decoration: underline;
 }
 
+a:focus-visible,
+button:focus-visible
+{
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 h1
 {
-  font-size: 14pt;
+  font-size: 1.6rem;
   font-variant: small-caps;
   font-weight: bold;
   margin-bottom: 50px;
@@ -35,12 +43,13 @@ h1
 
 h2
 {
-  font-size: 12pt;
+  font-size: 1.2rem;
 }
 
 #content
 {
   flex: 1 1 auto;
+  line-height: 1.5;
   min-height: 0;
   overflow-y: auto;
   padding: 50px 20% 30px 20%;
@@ -48,7 +57,7 @@ h2
 
 #copyright
 {
-  font-size: 10pt;
+  font-size: 0.875rem;
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -65,7 +74,7 @@ h2
 #footer a
 {
   display: block;
-  font-size: 12pt;
+  font-size: 1rem;
 }
 
 #header
@@ -107,7 +116,7 @@ h2
 #navigation a
 {
   color: white;
-  font-size: 14pt;
+  font-size: 1.1rem;
 }
 
 #navigation a[aria-current="page"]
